@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <body>
+        <h1>5 CSS Tricks Every Developer Should Know</h1>
+        <ul class="css-tricks">
+          <li data-target="css-variables">CSS Variables</li>
+          <li data-target="flexbox-layout">Flexbox Layout</li>
+          <li data-target="css-grid">CSS Grid</li>
+          <li data-target="pseudo-elements">Pseudo-elements & Pseudo-classes</li>
+          <li data-target="css-transitions">Elevate User Experience with CSS Transitions & Animations</li>
+        </ul>
+        <div id="css-variables" class="info">CSS Variables, also known as custom properties, allow you to store reusable values in a single place and apply them throughout your stylesheets. This makes it easier to maintain your code and implement changes like theme switches.</div>
+        <div id="flexbox-layout" class="info">The Flexbox layout model provides an efficient way to distribute space along a single axis among HTML elements, even when the sizes of your items are unknown or dynamic. This makes it a powerful tool for building complex layouts, aligning content, and distributing space within a container, even when the sizes of items are unknown or dynamic.</div>
+        <div id="css-grid" class="info">CSS Grid is a layout system that allows for complex design structures with rows and columns, making it easier to create intricate and responsive layouts. Unlike other CSS layout methods, Grid enables you to place an item anywhere within a defined grid, offering a high level of control and flexibility for modern web designs.</div>
+        <div id="pseudo-elements" class="info">Pseudo-elements and pseudo-classes are special selectors in CSS that allow you to style specific parts of an element or apply styles based on user interaction, respectively. For example, pseudo-elements like ::before and ::after let you insert content before or after an element's actual content, while pseudo-classes like :hover and :active let you apply styles during specific user actions.</div>
+        <div id="css-transitions" class="info">CSS Transitions and Animations enable smooth changes to CSS property values over a specified duration, enhancing user experience and interactivity. Transitions are ideal for simple changes over time, like hover effects, while animations offer more control for complex, multi-step animations.</div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const listItems = document.querySelectorAll('.css-tricks li');
+              listItems.forEach(item => {
+                item.addEventListener('click', function() {
+                  const target = this.getAttribute('data-target');
+                  const infoDiv = document.getElementById(target);
+                  infoDiv.style.display = (infoDiv.style.display === 'none' || infoDiv.style.display === '') ? 'block' : 'none';
+                });
+              });
+            });
+          </script>
+          <!-- Add this part for Questions, Feedback, and Contact Information -->
+         <div style="display:flex; height:15cm;width:100%;">  
+<section id="contact-feedback"style="display:inline-block;">
+    <h2>Questions & Feedback</h2>
+    <p>I would love to hear any questions you may have.</p>
+    <p>Your feedback is invaluable for me to improve. Please don't hesitate to share your thoughts!</p>
+  
+    <h2>Contact Information</h2>
+    <p>
+      You can reach out to me at 
+      <a href="mailto:stoxolieva@gmail.com">stoxolieva@gmail.com</a>, 
+      or find me on 
+      <!-- Replace 'your-linkedin-url' with the actual URL of your LinkedIn profile -->
+      <a href="https://www.linkedin.com/in/samira-toxolieva-78b8a8277/" target="_blank">LinkedIn</a>.
+    </p>
+    
+  </section>
+  <section id="contact-feedback"style="display:inline-block;">
+    <!-- Existing content -->
+    
+    <h2>Connect with Me</h2>
+    <div class="social-icons">
+      <!-- Replace 'your-linkedin-url' with the actual URL of your LinkedIn profile -->
+      <a href="https://www.linkedin.com/in/samira-toxolieva-78b8a8277/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+      
+      <!-- Replace 'your-github-url' with the actual URL of your GitHub profile -->
+      <a href="https://github.com/Samira0012" target="_blank"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="GitHub"></a>
+      
+      <!-- Replace 'your-twitter-url' with the actual URL of your Twitter profile -->
+      <a href="https://twitter.com/home" target="_blank"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-app-icon.png" alt="Twitter"></a>
+    </div>
+  </section>
+  <div id="contact-feedback" style="display:inline-block;">
+    <h2>Get in Touch</h2>
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+  
+  <input type=hidden name="orgid" value="00DHo0000018Q4D">
+  <input type=hidden name="retURL" value="http://">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="stoxolieva@gmail.com">    -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <label for="name">Contact Name</label> <br> <input  id="name" maxlength="80" name="name" size="30" type="text" /><br>
+  <br>
+  
+  <label for="email">Email</label><br><input  id="email" maxlength="80" name="email" size="30" type="text" /><br>
+  <br>
+  <label for="phone">Phone</label><br><input  id="phone" maxlength="40" name="phone" size="30" type="text" /><br>
+  <br>
+  <label for="subject">Subject</label><br><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+  <br>
+  <label for="description">Description</label><br><textarea name="description"></textarea><br>
+  <br>
+  <input type="hidden"  id="external" name="external" value="1" />
+ 
+  <input type="submit" name="submit">
+  <br>
+  </form>
+</div>
+  
+  
+</div>
+  <!-- Previous HTML code -->
+
+
+    </body>
+</html>
